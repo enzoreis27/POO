@@ -15,7 +15,7 @@ Console.WriteLine($"Nome do cliente : {cliente.Nome}");
 cliente.Cpf = "21682195759";
 Console.WriteLine($"Seu cpf é : {cliente.Cpf}");
 
-Console.WriteLine("DDLFLFLLS");
+
 
 Agencia agencia = new Agencia();
 
