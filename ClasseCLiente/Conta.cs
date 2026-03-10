@@ -8,7 +8,7 @@ namespace Conceitos
 {
     public class Conta
     {
-
+        private int _numero;
 
 
 
