@@ -34,6 +34,11 @@ Console.WriteLine($"Sua conta é do tipo : {agencia.Nome}");
 agencia.Telefone = "24992778679";
 Console.WriteLine($"Seu numero de telefone é : {agencia.Telefone}");
 
-Console.WriteLine("Obrigado pela consulta!");
+
+Console.WriteLine("Informe o numero da conta");
+long numero;
+Console.WriteLine($"Informe o saldo inicial da conta{numero}:");
+decimal saldoInicial;
+
 
 
