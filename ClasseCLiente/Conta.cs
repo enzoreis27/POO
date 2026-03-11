@@ -35,12 +35,12 @@ namespace Conceitos
         }
         public void Deposito(decimal valor)
         {
-            
+            Saldo += valor;
         }
 
         public void Saque(decimal valor)
         {
-
+            Saldo = Saldo - valor;
         }
     }
 

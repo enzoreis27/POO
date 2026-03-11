@@ -36,9 +36,17 @@ Console.WriteLine($"Seu numero de telefone é : {agencia.Telefone}");
 
 
 Console.WriteLine("Informe o numero da conta");
-long numero;
+long numero = Convert.ToInt64(Console.ReadLine());
 Console.WriteLine($"Informe o saldo inicial da conta{numero}:");
-decimal saldoInicial;
+decimal saldoInicial = decimal.Parse(Console.ReadLine());
+
+Conta conta = new Conta(numero, saldoInicial);
+Console.WriteLine($"Conta {conta.Numero} possui saldo R${conta.Saldo}.");
 
 
+conta.Deposito(1000);
+Console.WriteLine($"Após depósito, conta {conta.Numero} possui saldo R${conta.Saldo}.");
+
+conta.Saque(500);
+Console.WriteLine($"Após saque, conta {conta.Numero} possui saldo R${conta.Saldo}.");
 
